@@ -10,12 +10,6 @@ export const AnimatedBackground: React.FC = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Check for reduced motion preference
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (mediaQuery.matches) {
-      return; // Fallback to CSS gradient
-    }
-
     let animationFrameId: number;
     let stars: Star[] = [];
     
@@ -38,10 +32,10 @@ export const AnimatedBackground: React.FC = () => {
       constructor(width: number, height: number) {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.radius = Math.random() * 1.2 + 0.3;
-        this.opacity = Math.random();
-        this.speed = Math.random() * 0.2 + 0.05;
-        this.twinkleSpeed = Math.random() * 0.02 + 0.005;
+        this.radius = Math.random() * 1.5 + 0.5;
+        this.opacity = Math.random() * 0.8 + 0.2;
+        this.speed = Math.random() * 0.3 + 0.05;
+        this.twinkleSpeed = Math.random() * 0.03 + 0.01;
         this.twinkleDir = Math.random() > 0.5 ? 1 : -1;
       }
 
@@ -73,9 +67,9 @@ export const AnimatedBackground: React.FC = () => {
         ctx.fill();
         
         // Add a slight glow to larger stars
-        if (this.radius > 1) {
-          ctx.shadowBlur = 5;
-          ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
+        if (this.radius > 1.2) {
+          ctx.shadowBlur = 8;
+          ctx.shadowColor = 'rgba(255, 255, 255, 0.9)';
         } else {
           ctx.shadowBlur = 0;
         }
@@ -94,9 +88,7 @@ export const AnimatedBackground: React.FC = () => {
     };
 
     const animate = () => {
-      // Create a trailing effect by using a semi-transparent black fill instead of clearRect
-      ctx.fillStyle = 'rgba(5, 5, 10, 0.3)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
       
       stars.forEach(star => {
         star.update(canvas.width, canvas.height);

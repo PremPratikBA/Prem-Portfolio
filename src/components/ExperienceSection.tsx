@@ -4,6 +4,14 @@ import { resumeData } from '../data/resume';
 import { Briefcase, Calendar, MapPin, ChevronDown, CheckCircle2 } from 'lucide-react';
 
 export const ExperienceSection: React.FC = () => {
+  const [expandedIndices, setExpandedIndices] = useState<number[]>(resumeData.experience.map((_, i) => i));
+
+  const toggleExpand = (index: number) => {
+    setExpandedIndices(prev =>
+      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    );
+  };
+
   return (
     <section id="experience" className="relative py-32 px-6 overflow-hidden">
       <div className="max-w-5xl mx-auto w-full z-10">
@@ -45,7 +53,7 @@ export const ExperienceSection: React.FC = () => {
                 >
               <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/[0.02] rounded-2xl border border-white/10 backdrop-blur-sm transition-all duration-300 group-hover:border-white/20"></div>
               
-              <div className="relative p-6 md:p-8">
+              <div className="relative p-6 md:p-8 cursor-pointer" onClick={() => toggleExpand(index)}>
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-white mb-2 flex items-center gap-3">
@@ -74,10 +82,26 @@ export const ExperienceSection: React.FC = () => {
                         Client: {exp.client}
                       </span>
                     )}
+                    <motion.div
+                      animate={{ rotate: expandedIndices.includes(index) ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-white/50 group-hover:text-white/80 group-hover:bg-white/10"
+                    >
+                      <ChevronDown className="w-5 h-5" />
+                    </motion.div>
                   </div>
                 </div>
 
-                <div className="pt-8 mt-6 border-t border-white/10 space-y-6">
+                <AnimatePresence>
+                  {expandedIndices.includes(index) && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="pt-8 mt-6 border-t border-white/10 space-y-6">
                         {exp.projects ? (
                           exp.projects.map((proj, pIndex) => (
                             <div key={pIndex} className="space-y-4">
@@ -125,6 +149,9 @@ export const ExperienceSection: React.FC = () => {
                           </ul>
                         )}
                       </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </motion.div>
             </div>

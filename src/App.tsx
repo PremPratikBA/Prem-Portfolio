@@ -14,7 +14,7 @@ export default function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-indigo-500/30 selection:text-indigo-200">
+    <div className="min-h-screen text-white selection:bg-indigo-500/30 selection:text-indigo-200">
       <AnimatePresence mode="wait">
         {showSplash ? (
           <SplashScreen key="splash" onComplete={() => setShowSplash(false)} />
