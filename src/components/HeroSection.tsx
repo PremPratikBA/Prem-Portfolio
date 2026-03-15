@@ -78,8 +78,8 @@ export const HeroSection: React.FC = () => {
                 </button>
                 
                 <a
-                  href="/resume.pdf"
-                  download="Prem_Pratik_Senapaty_Resume.pdf"
+                  href="/PremPratikResume BA.pdf"
+                  download="PremPratikResume BA.pdf"
                   className="group inline-flex items-center justify-center px-8 py-4 font-semibold text-white/80 transition-all duration-300 bg-transparent border border-white/10 rounded-full hover:text-white hover:border-white/30 hover:bg-white/5 w-full sm:w-auto"
                 >
                   <span className="flex items-center gap-2">
