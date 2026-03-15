@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
             <span className="text-sm">{resumeData.basics.phone}</span>
           </a>
           <a
-            href={`https://${resumeData.basics.links[0]}`}
+            href={resumeData.basics.links[0]}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-white/60 hover:text-white transition-colors"

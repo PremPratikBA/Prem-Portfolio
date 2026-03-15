@@ -13,14 +13,14 @@ export const ExperienceSection: React.FC = () => {
   };
 
   return (
-    <section id="experience" className="relative py-32 px-6 overflow-hidden">
+    <section id="experience" className="relative py-8 px-6 overflow-hidden">
       <div className="max-w-5xl mx-auto w-full z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-8"
         >
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-4">
             Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Experience</span>

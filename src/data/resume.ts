@@ -1,15 +1,15 @@
 export const resumeData = {
   basics: {
     name: "PREM PRATIK SENAPATY",
-    title: "Certified Agile Business Analyst | PSM & PSPO Trained | CBAP Trained",
-    summary: "Results-driven Business Analyst with 3.5+ years in supply chain, logistics, and e-commerce. Proven track record delivering greenfield platforms for Fortune 500 clients (Shell, 3M, J&J, Electrolux) across Agile and Waterfall SDLC. Skilled in data-driven decision-making, cross-functional stakeholder management, and process optimization with a mission to build impactful, user-centric products.",
+    title: "Certified Agile BA — Scrum Master — PSM, PSPO, CBAP Trained — 3.5+ Years",
+    summary: "Business Analyst and Scrum Master with 3.5+ years building and shipping logistics and e-commerce platforms for clients including Shell, 3M, and Electrolux. Experienced in end-to-end ownership — from stakeholder workshops and Figma wireframes to UAT and hypercare. Now looking to move into senior BA or product roles where I can own outcomes, not just requirements.",
     location: "Bhubaneswar, India",
     email: "senapatyprem@gmail.com",
-    phone: "+91 82491 37581",
+    phone: "+91 8249137581",
     links: [
-      "linkedin.com/in/prempratiksenapaty"
+      "https://www.linkedin.com/in/prem-pratik-senapaty"
     ],
-    experience: "3.5+ Years Experience"
+    experience: "3.5+ Years"
   },
   experience: [
     {
@@ -22,19 +22,19 @@ export const resumeData = {
           name: "Xonar Control Tower (Greenfield)",
           clients: "Shell, 3M, Harman, Roche, Kerry",
           bullets: [
-            "Re-engineered a manual shipment process into an automated end-to-end booking system, reducing cargo planning cycle time and shipping costs through custom business rule logic for PO/SO consolidation.",
-            "Led end-to-end requirements elicitation and created Figma wireframes for the full order lifecycle, serving as liaison between clients, Product Owners and engineering teams, improving requirement clarity by ~30%.",
+            "Replaced a manual, email-driven shipment booking process with an automated end-to-end system — cutting cargo planning cycle time by 2 days and reducing per-shipment cost by 30% for Shell , 3M, Kerry and Roche.",
+            "Owned full requirements lifecycle for 4+ modules — conducted stakeholder workshops, built Figma wireframes, and wrote acceptance criteria; mid-sprint rework tickets dropped from ~8 per sprint to ~5 after introducing structured walkthrough checkpoints.",
             "Led requirement workshops, walkthroughs, and backlog grooming to identify gaps, dependencies, and risks — reducing rework and change-related delays by 25%.",
-            "Collaborated with engineering teams on API integration requirements — defining data contracts, request/response structures, and error-handling flows to ensure seamless system-to-system communication.",
-            "Delivered Order Management MVP in ~6 weeks — securing formal client commendation from Shell and 3M stakeholders."
+            "Defined data contracts, request/response schemas, and error-handling flows for 6 third-party API integrations — served as the single point of contact between client, vendor, and engineering during integration sprints.",
+            "Delivered Order Management MVP in 6 weeks with a 5-person squad — scope included Purchase orders consolidation logic, 3 API integrations, and a carrier selection engine; received formal written commendation from Shell ,Kerry and Roche programme leads."
           ]
         },
         {
           name: "Smart Classify & Smart Quote",
           clients: "Johnson & Johnson, Levi’s, PSA BDP",
           bullets: [
-            "Facilitated all Scrum ceremonies and sprint estimations; improved on-time sprint completion from 70% to 90%+ by resolving delivery bottlenecks and aligning cadence across cross-functional teams.",
-            "Orchestrated end-to-end UAT, developed training materials for global users, and led Hypercare support — reducing post-launch change requests by ~25% through proactive requirement validation."
+            "As Scrum Master for a 7-person cross-functional team, drove sprint completion rate from 70% to 92% over 3 months by introducing explicit dependency mapping in sprint planning and daily blocker escalation protocols.",
+            "Designed and executed UAT for 3 global user groups (J&J, Levi’s, PSA BDP) across 2 time zones; post-launch change requests dropped by 25% compared to previous releases by shifting validation upstream into sprint reviews."
           ]
         }
       ]
@@ -46,72 +46,76 @@ export const resumeData = {
       location: "Hyderabad, India",
       client: "Electrolux & Frigidaire (B2B E-Commerce Platform)",
       bullets: [
-        "Led requirement analysis for a B2B e-commerce platform enabling global businesses to place bulk orders with custom factory-source selection, streamlining procurement workflows for a multinational appliance brand.",
+        "Defined requirements for a B2B e-commerce platform (SAP Hybris) serving Electrolux and Frigidaire’s global dealer network — scope covered bulk ordering, custom factory-source selection, and multi-currency pricing across 5 regions .",
         "Partnered with product and engineering leads to prioritize and groom backlog, improving delivery predictability and reducing sprint spillovers by maintaining a stable velocity across releases.",
         "Coordinated QA and UAT execution including test case validation, regression testing, and go-live sign-offs — resulting in 90%+ defect-free deployments and a 20% reduction in post-production issues.",
-        "Implemented knowledge management practices in Confluence, reducing onboarding time and document retrieval effort by 50%."
+        "Built a Confluence knowledge base from scratch — wiki pages, process guides, and UAT templates — cutting new BA onboarding time from 4 weeks to 2 weeks; adopted as the team standard across multiple concurrent projects ."
       ]
     }
   ],
   achievements: [
     {
-      metric: "~30%",
-      context: "improved requirement clarity by creating Figma wireframes for full order lifecycle"
+      metric: "90%+",
+      context: "defect-free deployments through coordinated QA and UAT execution"
+    },
+    {
+      metric: "70% to 92%",
+      context: "drove sprint completion rate over 3 months by introducing explicit dependency mapping"
     },
     {
       metric: "25%",
-      context: "reduced rework and change-related delays through requirement workshops and backlog grooming"
+      context: "reduction in rework and change-related delays through requirement workshops and backlog grooming"
     },
     {
-      metric: "~6 weeks",
-      context: "delivered Order Management MVP, securing formal client commendation from Shell and 3M"
+      metric: "6 weeks",
+      context: "delivered Order Management MVP with a 5-person squad"
     },
     {
-      metric: "70% to 90%+",
-      context: "improved on-time sprint completion by resolving delivery bottlenecks"
+      metric: "2 days & 30%",
+      context: "cut cargo planning cycle time and reduced per-shipment cost for Shell, 3M, Kerry and Roche"
     },
     {
-      metric: "~25%",
-      context: "reduced post-launch change requests through proactive requirement validation and UAT"
+      metric: "~8 to ~5",
+      context: "mid-sprint rework tickets dropped after introducing structured walkthrough checkpoints"
     },
     {
-      "metric": "90%+",
-      context: "defect-free deployments achieved through coordinated QA and UAT execution"
+      metric: "25%",
+      context: "drop in post-launch change requests by shifting validation upstream into sprint reviews"
     },
     {
-      "metric": "20%",
-      "context": "reduction in post-production issues"
+      metric: "20%",
+      context: "reduction in post-production issues"
     },
     {
-      "metric": "50%",
-      "context": "reduction in onboarding time and document retrieval effort via Confluence knowledge management"
+      metric: "4 to 2 weeks",
+      context: "cut new BA onboarding time by building a Confluence knowledge base from scratch"
     }
   ],
   projects: [],
   skills: [
     {
-      group: "Core BA",
-      items: "Requirements Elicitation, User Stories, Acceptance Criteria, Functional & Non-Functional Analysis, BRD, FRD, SRS, RTM, MoSCoW Prioritization, Backlog Mgmt, GAP Analysis"
+      group: "Business Analysis & Requirements",
+      items: "Requirements Elicitation, User Stories & Acceptance Criteria, BRD, FRD, FSD, SRS, RTM, MoSCoW Prioritization, GAP Analysis, Root Cause Analysis, Business Case Development, RACI, Stakeholder Matrix"
     },
     {
-      group: "Process & Modelling",
-      items: "BPMN 2.0, UML, AS-IS/TO-BE Mapping, Wireframes (Figma, Balsamiq), Use Cases, Stakeholder Management"
+      group: "Process & Product Design",
+      items: "BPMN 2.0, UML, Process Reengineering (AS-IS/TO-BE), User Flow Design, Low-Fidelity Prototyping, Use Cases, Customer Journey Mapping"
     },
     {
       group: "Agile & Delivery",
-      items: "Scrum Ceremonies, Sprint Planning & Review, Retrospectives, Kanban, Release Notes, Hypercare, CAB, WBS"
+      items: "Scrum Master, Sprint Planning & Review, Backlog Ownership, Kanban, Release Management, Agile Metrics (Velocity, Burn-down, Cycle Time), Acceptance Testing & Release Sign-off, Hypercare, Change Management"
     },
     {
       group: "Data & Analytics",
-      items: "SQL, UAT & Functional Testing, Power BI, Tableau, Excel, Data Flow Modelling"
+      items: "SQL (Data Validation & UAT Analysis), Power BI, Tableau, Data Flow Modelling, Excel (Advanced)"
     },
     {
       group: "Tools",
-      "items": "Jira, Confluence, Azure DevOps, Figma, Balsamiq, Lucidchart, Camunda, MS Project, Visio, SAP Hybris"
+      items: "Jira, Confluence, Azure DevOps, Figma, Lucidchart, Camunda, SAP Hybris, Postman (API Review)"
     },
     {
       group: "Domains",
-      items: "Supply Chain & Logistics, E-Commerce, Customs & Trade Compliance, B2B & B2C"
+      items: "Supply Chain & Logistics, B2B/B2C E-Commerce, Order Management Systems, Customs & Trade Compliance"
     }
   ],
   education: [
@@ -123,15 +127,48 @@ export const resumeData = {
     }
   ],
   certifications: [
-    "Certified Agile Business Analyst Professional – Scrum Master & Product Owner Trained, IIBA-Endorsed (TrainSmart)",
-    "SFPC – Scrum Foundational Professional Certificate, Certiprof",
-    "Agile Project Management – Google",
-    "Google Data Analytics – Coursera"
+    "Certified Agile Business Analyst Professional (TrainSmart, IIBA-Endorsed)",
+    "Professional Scrum Master (PSM I) (TrainSmart, IIBA-Endorsed)",
+    "Professional Scrum Product Owner (PSPO I) (TrainSmart, IIBA-Endorsed)",
+    "Scrum Foundational Professional Certificate (Certiprof)",
+    "Google Data Analytics (Coursera - Google)",
+    "Agile Project Management (Coursera - Google)"
   ],
   awards: [
     {
       title: "Peer Appreciation Award",
       description: "Voted best team player by colleagues for cross-functional collaboration, delivery ownership, and consistent team support across projects."
+    },
+    {
+      title: "Coz-Hackathon Award",
+      description: "Voted best presenter in hackathon project - Rate Parser PRO."
+    }
+  ],
+  clientFeedbacks: [
+    {
+      id: 1,
+      image: "/feedbacks/feedback1.jpg",
+      alt: "Client Feedback 1"
+    },
+    {
+      id: 2,
+      image: "/feedbacks/feedback2.jpg",
+      alt: "Client Feedback 2"
+    },
+    {
+      id: 3,
+      image: "/feedbacks/feedback3.jpg",
+      alt: "Client Feedback 3"
+    },
+    {
+      id: 4,
+      image: "/feedbacks/feedback4.png",
+      alt: "Client Feedback 4"
+    },
+    {
+      id: 5,
+      image: "/feedbacks/feedback5.png",
+      alt: "Client Feedback 5"
     }
   ],
   extra: []

@@ -52,7 +52,7 @@ ${resumeData.awards.map(a => `- ${a.title}: ${a.description}`).join('\n')}
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center px-6 py-24 overflow-hidden">
+    <section id="hero" className="relative flex items-center justify-center px-6 pt-32 pb-16 overflow-hidden">
       <div className="max-w-5xl mx-auto w-full z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

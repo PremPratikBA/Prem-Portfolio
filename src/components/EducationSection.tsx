@@ -5,7 +5,7 @@ import { GraduationCap, Award, BookOpen } from 'lucide-react';
 
 export const EducationSection: React.FC = () => {
   return (
-    <section id="education" className="relative py-32 px-6 bg-black/40 backdrop-blur-xl border-t border-white/5">
+    <section id="education" className="relative py-8 px-6 bg-black/40 backdrop-blur-xl border-t border-white/5">
       <div className="max-w-7xl mx-auto w-full z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
@@ -16,7 +16,7 @@ export const EducationSection: React.FC = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-12">
+            <div className="mb-8">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-4 flex items-center gap-4">
                 <GraduationCap className="w-10 h-10 text-blue-400" />
                 Education
@@ -46,7 +46,7 @@ export const EducationSection: React.FC = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="mb-12">
+            <div className="mb-8">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-4 flex items-center gap-4">
                 <Award className="w-10 h-10 text-amber-400" />
                 Certifications
