@@ -1,8 +1,8 @@
 export const resumeData = {
   basics: {
     name: "PREM PRATIK SENAPATY",
-    title: "Certified Agile BA — Scrum Master — PSM, PSPO, CBAP Trained — 3.5+ Years",
-    summary: "Business Analyst and Scrum Master with 3.5+ years building and shipping logistics and e-commerce platforms for clients including Shell, 3M, and Electrolux. Experienced in end-to-end ownership — from stakeholder workshops and Figma wireframes to UAT and hypercare. Now looking to move into senior BA or product roles where I can own outcomes, not just requirements.",
+    title: "Certified Agile BA · Scrum Master · PSM, PSPO, CBAP Trained · 3.7+ Years",
+    summary: "Business Analyst and Scrum Master with 3.7+ years building and shipping logistics and e-commerce platforms for clients including Shell, 3M, and Electrolux. Experienced in end-to-end ownership — from stakeholder workshops and Figma wireframes to UAT and hypercare. Now looking to move into senior BA or product roles where I can own outcomes, not just requirements.",
     location: "Bhubaneswar, India",
     email: "senapatyprem@gmail.com",
     phone: "+91 8249137581",
