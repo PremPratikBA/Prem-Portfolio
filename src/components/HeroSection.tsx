@@ -101,10 +101,6 @@ export const HeroSection: React.FC = () => {
                 src="/profile.png" 
                 alt={resumeData.basics.name} 
                 className="w-full aspect-[9/16] rounded-[2rem] object-cover border-4 border-white/10 shadow-2xl"
-                referrerPolicy="no-referrer"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://picsum.photos/seed/prem/800/1422";
-                }}
               />
             </motion.div>
           </div>

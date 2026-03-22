@@ -275,7 +275,6 @@ export const AchievementsSection: React.FC = () => {
                             height: zoomLevel === 1 ? 'auto' : '100%',
                             objectFit: 'contain'
                           }}
-                          referrerPolicy="no-referrer"
                         />
                       </div>
                     </div>
